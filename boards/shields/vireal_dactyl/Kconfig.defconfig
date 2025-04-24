@@ -1,0 +1,50 @@
+if SHIELD_VIREAL_DACTYL_RIGHT
+config ZMK_KEYBOARD_NAME
+    default "vireal-dactyl-r"
+config ZMK_SPLIT_ROLE_CENTRAL
+    default y
+# Enable display on the central side (right)
+config ZMK_DISPLAY
+    default n
+config ZMK_RGB_UNDERGLOW
+    default n
+endif
+
+if SHIELD_VIREAL_DACTYL_LEFT
+config ZMK_KEYBOARD_NAME
+    default "vireal-dactyl-l"
+# Display on the left side too
+config ZMK_DISPLAY
+    default n
+config ZMK_RGB_UNDERGLOW
+    default n
+endif
+
+if SHIELD_VIREAL_DACTYL_RIGHT || SHIELD_VIREAL_DACTYL_LEFT
+config ZMK_SPLIT
+    default y
+config ZMK_STUDIO
+    default y
+endif
+
+if ZMK_DISPLAY
+    config I2C
+        default y
+    config SSD1306
+        default y
+    config ZMK_DISPLAY_BLANK_ON_IDLE
+        default y
+        
+    # LVGL configurations - using only validated options
+    config LV_Z_VDB_SIZE
+        default 64
+    config LV_Z_BITS_PER_PIXEL
+        default 1
+    config ZMK_DISPLAY_INVERT
+        default y
+endif # ZMK_DISPLAY
+
+if ZMK_RGB_UNDERGLOW
+    config WS2812_STRIP
+        default n
+endif # ZMK_RGB_UNDERGLOW

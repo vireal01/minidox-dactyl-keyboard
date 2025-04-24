@@ -1,0 +1,107 @@
+#define ZMK_POINTING_DEFAULT_MOVE_VAL 600  // default: 600
+#define ZMK_POINTING_DEFAULT_SCRL_VAL 10    // default: 10
+
+#include <behaviors.dtsi>
+#include <dt-bindings/zmk/bt.h>
+#include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/pointing.h>
+#include <dt-bindings/zmk/rgb.h>
+
+#define DEFAULT 0
+#define RAISE   1
+#define LOWER   2
+#define NUMPAD  3
+
+/ {
+    macros {
+        screenshot: screenshot {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&kp LEFT_COMMAND &kp LEFT_SHIFT &kp NUMBER_4>,
+                <&macro_tap>;
+
+            label = "SCREENSHOT";
+        };
+    };
+
+    keymap {
+        compatible = "zmk,keymap";
+
+        default_layer {
+            // Commented layout is not actual layout.
+            // -------------------------------------------------------------------------------------------------------------------------
+            // |   TAB   |    Q    |    W    |    E    |    R    |    T    |                   |    Y    |    U    |    I    |    O    |    P    |
+            // |  LALT   |    A    |    S    |    D    |    F    |    G    |                   |    H    |    J    |    K    |    L    |    ;    |
+            // |  LCTRL  |    Z    |    X    |    C    |    V    |    B    |                   |    N    |    M    |    ,    |    .    |    /    |
+            //                              |    LCTRL | MO lay 1| SPACE   |                   | ENTER   | Lower | BSPC
+
+            bindings = <
+&kp TAB           &kp Q  &kp W  &kp E         &kp R      &kp T        &kp Y      &kp U      &kp I      &kp O    &kp P
+
+&kp LEFT_SHIFT    &kp A  &kp S  &kp D         &kp F      &kp G        &kp H      &kp J      &kp K      &kp L    &kp SEMI
+
+&kp LEFT_CONTROL  &kp Z  &kp X  &kp C         &kp V      &kp B        &kp N      &kp M      &kp COMMA  &kp DOT  &kp FSLH
+
+                                &kp LEFT_GUI  &mo RAISE  &kp SPACE    &kp ENTER  &mo LOWER  &kp BSPC
+            >;
+        };
+
+        raise {
+            // commented layout is not actual layout.
+            // -------------------------------------------------------------------------------------------------------------------------
+            // |   tab   |    q    |    w    |    e    |    r    |    t    |                   |    y    |    u    |    i    |    o    |    p    |
+            // |  lalt   |    a    |    s    |    d    |    f    |    g    |                   |    h    |    j    |    k    |    l    |    ;    |
+            // |  lctrl  |    z    |    x    |    c    |    v    |    b    |                   |    n    |    m    |    ,    |    .    |    /    |
+            //                              |    LCTRL | MO lay 1| SPACE   |                   | ENTER   | Lower | BSPC
+
+            bindings = <
+&kp ESC         &kp LS(EXCL)  &kp LS(AT)       &kp LS(POUND)    &kp LS(DLLR)      &kp LS(PRCNT)    &kp LS(CARET)  &kp LS(AMPS)    &kp LS(STAR)    &kp LS(LPAR)     &kp MINUS
+
+&kp LEFT_SHIFT  &kp LS(LT)    &kp LS(GT)       &kp LS(LPAR)     &kp LS(RPAR)      &none            &kp LG(UP)     &msc SCRL_UP    &mmv MOVE_UP    &msc SCRL_DOWN   &kp EQUAL
+
+&kp LEFT_ALT    &trans        &rgb_ug RGB_EFF  &rgb_ug RGB_TOG  &kp LEFT_CONTROL  &screenshot      &mkp MB3       &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &kp BSLH
+
+                                               &kp LEFT_GUI     &none             &kp SPACE        &mkp MB2       &mo NUMPAD      &mkp MB1
+            >;
+        };
+
+        lower {
+            // commented layout is not actual layout.
+            // -------------------------------------------------------------------------------------------------------------------------
+            // |   tab   |    q    |    w    |    e    |    r    |    t    |                   |    y    |    u    |    i    |    o    |    p    |
+            // |  lalt   |    a    |    s    |    d    |    f    |    g    |                   |    h    |    j    |    k    |    l    |    ;    |
+            // |  lctrl  |    z    |    x    |    c    |    v    |    b    |                   |    n    |    m    |    ,    |    .    |    /    |
+            //                               |    LCTRL | MO lay 1| SPACE  |                   | ENTER   | Lower | BSPC
+
+            bindings = <
+&kp ESC       &kp N1     &kp N2    &kp N3        &kp N4        &kp N5           &kp N6       &kp N7        &kp N8    &kp N9     &kp UNDER
+
+&kp CAPSLOCK  &kp LBKT   &kp RBKT  &kp LS(LBRC)  &kp LS(RBRC)  &kp SQT          &kp LS(DQT)  &msc SCRL_UP  &kp UP    &kp RIGHT  &kp PLUS
+
+&kp LEFT_ALT  &kp TILDE  &trans    &trans        &trans        &kp LC(SPACE)    &kp K_PP     &kp LEFT      &kp DOWN  &kp RIGHT  &kp FSLH
+
+                                   &kp LCTRL     &mo 3         &kp SPACE        &kp ENTER    &kp 1         &kp BSPC
+            >;
+        };
+
+        numpad {
+            // commented layout is not actual layout.
+            // -------------------------------------------------------------------------------------------------------------------------
+            // |   tab   |    q    |    w    |    e    |    r    |    t    |                   |    y    |    u    |    i    |    o    |    p    |
+            // |  lalt   |    a    |    s    |    d    |    f    |    g    |                   |    h    |    j    |    k    |    l    |    ;    |
+            // |  lctrl  |    z    |    x    |    c    |    v    |    b    |                   |    n    |    m    |    ,    |    .    |    /    |
+            //                               |    LCTRL | MO lay 1| SPACE  |                   | ENTER   | Lower | BSPC
+
+            bindings = <
+&kp C_BRIGHTNESS_INC  &kp C_BRI_DEC  &kp C_AC_DESKTOP_SHOW_ALL_WINDOWS  &trans     &bt BT_CLR  &kp LBKT     &kp K_VOLUME_UP    &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &trans
+
+&bt BT_NXT            &kp HOME       &kp PG_UP                          &kp PG_DN  &kp END     &kp LPAR     &kp K_VOLUME_DOWN  &kp KP_NUMBER_4  &kp N5           &kp N6           &kp DOT
+
+&bt BT_PRV            &trans         &trans                             &trans     &trans      &kp F6       &kp KP_NUMBER_0    &kp N1           &kp N2           &kp N3           &kp PIPE
+
+                                                                        &kp LCTRL  &mo RAISE   &kp SPACE    &kp ENTER          &kp 1            &kp BSPC
+            >;
+        };
+    };
+};
