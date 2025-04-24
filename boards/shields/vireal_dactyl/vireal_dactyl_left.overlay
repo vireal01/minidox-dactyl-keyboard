@@ -1,5 +1,4 @@
 #include "vireal_dactyl.dtsi" // The shared dtsi file is included in the overlay
-#include <dt-bindings/led/led.h>
 
 // Label of the kscan node in the dtsi
 &kscan0 {

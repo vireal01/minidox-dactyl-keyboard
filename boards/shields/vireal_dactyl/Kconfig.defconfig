@@ -1,19 +1,19 @@
 if SHIELD_VIREAL_DACTYL_RIGHT
 config ZMK_KEYBOARD_NAME
     default "mini-dactyl"
-config ZMK_SPLIT_ROLE_CENTRAL
-    default y
 # Enable display on the central side (right)
 config ZMK_DISPLAY
-    default n
+    default y
 endif
 
 if SHIELD_VIREAL_DACTYL_LEFT
 config ZMK_KEYBOARD_NAME
     default "mini-dactyl-l"
+config ZMK_SPLIT_ROLE_CENTRAL
+    default y
 # Display on the left side too
 config ZMK_DISPLAY
-    default n
+    default y
 endif
 
 if SHIELD_VIREAL_DACTYL_RIGHT || SHIELD_VIREAL_DACTYL_LEFT
