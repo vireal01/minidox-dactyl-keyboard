@@ -21,6 +21,5 @@
 include:
   - board: nice_nano_v2
     shield: vireal_dactyl_right
-    snippet: studio-rpc-ble
   - board: nice_nano_v2
     shield: vireal_dactyl_left
