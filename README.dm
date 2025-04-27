@@ -2,7 +2,7 @@
 
 A custom split ergonomic keyboard with a minimalist column-staggered layout. This repository contains all the necessary information and files to build your own MINIDOX Dactyl keyboard.
 
-![MINIDOX Dactyl Keyboard](https://via.placeholder.com/800x400)
+![MINIDOX Dactyl Keyboard](./assets/assembled_kb.jpg)
 
 ## Features
 
