@@ -10,6 +10,7 @@
 #define RAISE   1
 #define LOWER   2
 #define NUMPAD  3
+#define GAMING  4
 
 / {
     macros {
@@ -100,6 +101,18 @@
 &trans         &trans                             &trans     &trans      &kp F6                &kp KP_NUMBER_0    &kp N1           &kp N2           &kp N3           &kp PIPE
 
                                                              &kp LCTRL   &mo RAISE  &kp SPACE                     &kp ENTER        &kp 1            &kp BSPC
+            >;
+        };
+
+        gaming {
+            bindings = <
+&kp TAB       &kp Q  &kp W      &kp E      &kp R        &kp Y    &kp U    &kp I      &kp O    &kp P
+
+&kp LSHFT     &kp A  &kp S      &kp D      &kp F        &kp H    &kp J    &kp K      &kp L    &tog 0
+
+&kp LEFT_ALT  &kp Z  &kp X      &kp C      &kp V        &kp N    &kp M    &kp COMMA  &kp DOT  &tog 4
+
+                     &kp LCTRL  &mo G  &kp SPACE    &kp RET  &kp ESC  &kp BSPC
             >;
         };
     };
