@@ -100,7 +100,7 @@
 
 &kp LEFT_ALT  &kp Z  &kp X  &kp C      &kp V             &kp N  &kp M    &kp COMMA  &kp DOT   &tog 4
 
-                            &kp LCTRL  &mo G  &kp SPACE         &kp RET  &kp ESC    &kp BSPC
+                            &kp LCTRL  &kp G  &kp SPACE         &kp RET  &kp ESC    &kp BSPC
             >;
         };
     };
