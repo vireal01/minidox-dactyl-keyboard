@@ -50,7 +50,7 @@
 
 &kp LC(Z)       &kt LC(X)        &kp LC(C)      &kp LC(V)     &kp LG(LS(KP_NUMBER_4))          &mkp MB3       &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &kp BSLH
 
-                                                &kp LEFT_GUI  &none                    &tog 4                 &mkp MB2        &mo NUMPAD      &mkp MB1
+                                                &kp LCTRL     &none                    &tog 4                 &mkp MB2        &mo NUMPAD      &mkp MB1
             >;
         };
 
