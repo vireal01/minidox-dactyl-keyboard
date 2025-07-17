@@ -22,8 +22,8 @@
             RC(1,0) RC(1,1) RC(1,2) RC(1,3) RC(1,4)       RC(1,5) RC(1,6) RC(1,7) RC(1,8) RC(1,9)
         //  LKey 13 |LKey 14 |LKey 15 |LKey 16 |LKey 18    RKey 11 |RKey 12 |RKey 13 |RKey 14 |RKey 15 
             RC(2,0) RC(2,1) RC(2,2) RC(2,3) RC(2,4)        RC(2,5)  RC(2,6) RC(2,7) RC(2,8) RC(2,9)
-        //                          LKey 19 |LKey 20 |LKey 21       RKey 16 |RKey 17 |RKey 18
-                            RC(3,2) RC(3,3) RC(3,4)         RC(3,5) RC(3,6) RC(3,7)
+        //                 LKey 19 |LKey 20 |LKey 21       RKey 16 |RKey 17 |RKey 18
+                        RC(3,2) RC(3,3) RC(3,4)         RC(3,5) RC(3,6) RC(3,7)
         >;
     };
 
@@ -76,6 +76,10 @@
         page-offset = <0>;
         display-offset = <0>;
         multiplex-ratio = <31>;
+        segment-remap;
+        com-invdir;
+        com-sequential;
+        inversion-on;
         prechargep = <0x22>;
     };
 

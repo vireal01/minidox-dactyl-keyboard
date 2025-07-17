@@ -1,0 +1,15 @@
+file_format: "1"
+id: vireal_dactyl
+name: Vireal Dactyl Minidox
+type: shield
+url: https://https://github.com/vireal01/minidox-dactyl-keyboard/
+requires: [pro_micro]
+exposes: [i2c_oled]
+features:
+  - keys
+  - display
+  - underglow
+  - studio
+siblings:
+  - vireal_dactyl_left
+  - vireal_dactyl_right
