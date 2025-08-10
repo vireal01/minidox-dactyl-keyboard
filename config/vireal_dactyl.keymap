@@ -50,7 +50,7 @@
 
 &kp TILDE       &kt GRAVE        &kp LC(LS(N5))  &kp LC(LS(NUMBER_4))  &kp LC(SPACE)          &mkp MB3       &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &kp BSLH
 
-                                                 &kp LCTRL             &none          &tog 4                 &mkp MB2        &mo NUMPAD      &mkp MB1
+                                                 &kp DEL               &none          &tog 4                 &mkp MB2        &mo NUMPAD      &mkp MB1
             >;
         };
 
