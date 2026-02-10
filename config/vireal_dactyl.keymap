@@ -44,13 +44,13 @@
             //                              |    LCTRL | MO lay 1| SPACE   |                   | ENTER   | Lower | BSPC
 
             bindings = <
-&kp ESC         &kp NUMBER_2     &kp NUMBER_3    &kp NUMBER_4          &kp N5                 &kp LS(CARET)  &kp LS(AMPS)    &kp LS(STAR)    &kp LS(LPAR)     &kp MINUS
+&kp ESC         &kp NUMBER_2     &kp NUMBER_3    &kp NUMBER_4          &kp N5                 &kp N6      &kp N7          &kp N8          &kp N9           &kp N0
 
-&kp LEFT_BRACE  &kp RIGHT_BRACE  &kp LS(LPAR)    &kp LS(RPAR)          &kp TAB                &kp LG(UP)     &msc SCRL_UP    &mmv MOVE_UP    &msc SCRL_DOWN   &kp EQUAL
+&kp LEFT_BRACE  &kp RIGHT_BRACE  &kp LS(LPAR)    &kp LS(RPAR)          &kp TAB                &kp LG(UP)  &msc SCRL_UP    &mmv MOVE_UP    &msc SCRL_DOWN   &kp EQUAL
 
-&kp TILDE       &kt GRAVE        &kp LC(LS(N5))  &kp LC(LS(NUMBER_4))  &kp LC(SPACE)          &mkp MB3       &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &kp BSLH
+&kp TILDE       &kt GRAVE        &kp LC(LS(N5))  &kp LC(LS(NUMBER_4))  &kp LC(SPACE)          &mkp MB3    &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &kp BSLH
 
-                                                 &kp DEL               &none          &tog 4                 &mkp MB2        &mo NUMPAD      &mkp MB1
+                                                 &kp DEL               &none          &tog 4              &mkp MB2        &mo NUMPAD      &mkp MB1
             >;
         };
 
@@ -82,13 +82,13 @@
             //                               |    LCTRL | MO lay 1| SPACE  |                   | ENTER   | Lower | BSPC
 
             bindings = <
-&kp C_BRI_DEC  &kp C_AC_DESKTOP_SHOW_ALL_WINDOWS  &trans     &bt BT_CLR  &kp LBKT              &kp K_VOLUME_UP    &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &bt BT_NXT
+&kp C_BRI_DEC  &kp C_AC_DESKTOP_SHOW_ALL_WINDOWS  &trans     &bt BT_CLR  &kp LBKT              &kp K_VOLUME_UP    &kp N7     &kp NUMBER_8  &kp N9    &bt BT_NXT
 
-&kp HOME       &kp PG_UP                          &kp PG_DN  &kp END     &kp LPAR              &kp K_VOLUME_DOWN  &kp KP_NUMBER_4  &kp N5           &kp N6           &bt BT_PRV
+&kp HOME       &kp PG_UP                          &kp PG_DN  &kp END     &kp LPAR              &kp K_VOLUME_DOWN  &kp N4     &kp N5        &kp N6    &bt BT_PRV
 
-&trans         &trans                             &trans     &trans      &kp F6                &kp KP_NUMBER_0    &kp N1           &kp N2           &kp N3           &kp PIPE
+&kt F1         &kt F2                             &kt F3     &kt F4      &kp F6                &kp KP_NUMBER_0    &kp N1     &kp N2        &kp N3    &kp PIPE
 
-                                                             &kp LCTRL   &mo RAISE  &kp SPACE                     &kp ENTER        &kp 1            &kp BSPC
+                                                             &kp LCTRL   &mo RAISE  &kp SPACE                     &kp ENTER  &kp 1         &kp BSPC
             >;
         };
 
