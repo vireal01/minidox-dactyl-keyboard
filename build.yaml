@@ -19,9 +19,9 @@
 #
 ---
 include:
-  - board: nice_nano_v2
+  - board: nice_nano@2.0.0
     shield: vireal_dactyl_right
-  - board: nice_nano_v2
+  - board: nice_nano@2.0.0
     shield: vireal_dactyl_left
     snippet: studio-rpc-usb-uart
 
