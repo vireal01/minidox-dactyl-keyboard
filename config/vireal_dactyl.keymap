@@ -63,7 +63,7 @@
             //                               |    LCTRL | MO lay 1| SPACE  |                   | ENTER   | Lower | BSPC
 
             bindings = <
-&kp EXCLAMATION  &kp LS(AT_SIGN)   &kp HASH          &kp DOLLAR         &kp PERCENT               &kp CARET    &kp AMPS      &kp ASTERISK  &trans     &kp UNDER
+&kp EXCLAMATION  &kp LS(AT_SIGN)   &kp HASH          &kp DOLLAR         &kp PERCENT               &kp CARET    &kp AMPS      &kp ASTERISK  &kt MINUS  &kp UNDER
 
 &kp LESS_THAN    &kp GREATER_THAN  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp SQT                   &kp LS(DQT)  &msc SCRL_UP  &kp UP        &kp RIGHT  &kp PLUS
 
