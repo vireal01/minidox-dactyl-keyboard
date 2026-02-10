@@ -83,10 +83,4 @@
         prechargep = <0x22>;
     };
 
-    // Add this diagnostic scanner
-    i2c_scanner: i2c_scanner@76 {
-        compatible = "vnd,i2c-scanner";
-        reg = <0x76>;
-        status = "okay";
-    };
 };
