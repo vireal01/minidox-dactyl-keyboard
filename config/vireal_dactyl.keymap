@@ -63,7 +63,7 @@
             //                               |    LCTRL | MO lay 1| SPACE  |                   | ENTER   | Lower | BSPC
 
             bindings = <
-&kp EXCLAMATION  &kp LS(AT_SIGN)   &kp HASH          &kp DOLLAR         &kp PERCENT               &kp CARET    &kp AMPS      &kp ASTERISK  &kt MINUS  &kp UNDER
+&kp EXCLAMATION  &kp LS(AT_SIGN)   &kp HASH          &kp DOLLAR         &kp PERCENT               &kp CARET    &kp AMPS      &kp ASTERISK  &kp MINUS  &kp UNDER
 
 &kp LESS_THAN    &kp GREATER_THAN  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp SQT                   &kp LS(DQT)  &msc SCRL_UP  &kp UP        &kp RIGHT  &kp PLUS
 
@@ -86,7 +86,7 @@
 
 &kp HOME       &kp PG_UP                          &kp PG_DN  &kp END     &kp LPAR              &kp K_VOLUME_DOWN  &kp N4     &kp N5        &kp N6    &bt BT_PRV
 
-&kt F1         &kt F2                             &kt F3     &kt F4      &kp F6                &kp KP_NUMBER_0    &kp N1     &kp N2        &kp N3    &kp PIPE
+&kt F1         &kt F2                             &kt F3     &kt F4      &kp F6                &kp N0             &kp N1     &kp N2        &kp N3    &kp PIPE
 
                                                              &kp LCTRL   &mo RAISE  &kp SPACE                     &kp ENTER  &kp 1         &kp BSPC
             >;
