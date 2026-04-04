@@ -46,7 +46,7 @@
             bindings = <
 &kp ESC         &kp NUMBER_2     &kp NUMBER_3    &kp NUMBER_4          &kp N5                 &kp N6      &kp N7          &kp N8          &kp N9           &kp N0
 
-&kp LEFT_BRACE  &kp RIGHT_BRACE  &kp LS(LPAR)    &kp LS(RPAR)          &kp TAB                &kp LG(UP)  &msc SCRL_UP    &kp INS         &msc SCRL_DOWN   &kp EQUAL
+&kp LEFT_BRACE  &kp RIGHT_BRACE  &kp LS(LPAR)    &kp LS(RPAR)          &kp TAB                &kp LG(UP)  &msc SCRL_UP    &mmv MOVE_UP    &msc SCRL_DOWN   &kp EQUAL
 
 &kp TILDE       &kt GRAVE        &kp LC(LS(N5))  &kp LC(LS(NUMBER_4))  &kp LC(SPACE)          &mkp MB3    &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &kp BSLH
 
@@ -63,7 +63,7 @@
             //                               |    LCTRL | MO lay 1| SPACE  |                   | ENTER   | Lower | BSPC
 
             bindings = <
-&kp EXCLAMATION  &kp LS(AT_SIGN)   &kp HASH          &kp DOLLAR         &kp PERCENT               &kp CARET    &kp AMPS      &kp ASTERISK  &kp MINUS  &kp UNDER
+&kp EXCLAMATION  &kp LS(AT_SIGN)   &kp HASH          &kp DOLLAR         &kp PERCENT               &kp CARET    &kp AMPS      &kp ASTERISK  &trans     &kp UNDER
 
 &kp LESS_THAN    &kp GREATER_THAN  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp SQT                   &kp LS(DQT)  &msc SCRL_UP  &kp UP        &kp RIGHT  &kp PLUS
 
@@ -86,7 +86,7 @@
 
 &kp HOME       &kp PG_UP                          &kp PG_DN  &kp END     &kp LPAR              &kp K_VOLUME_DOWN  &kp N4     &kp N5        &kp N6    &bt BT_PRV
 
-&kt F1         &kt F2                             &kt F3     &kt F4      &kp F6                &kp N0             &kp N1     &kp N2        &kp N3    &kp PIPE
+&kt F1         &kt F2                             &kt F3     &kt F4      &kp F6                &kp KP_NUMBER_0    &kp N1     &kp N2        &kp N3    &kp PIPE
 
                                                              &kp LCTRL   &mo RAISE  &kp SPACE                     &kp ENTER  &kp 1         &kp BSPC
             >;
