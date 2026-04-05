@@ -88,10 +88,14 @@ You have to link the forked github project and it will crate a merge request wit
    - Press the reset button twice in quick succession
    - The controller will appear as a USB drive on your computer
 2. Drag and drop the appropriate `.uf2` file onto the USB drive:
-   - `vireal_dactyl_left-nice_nano_v2-zmk.uf2` for the left half
-   - `vireal_dactyl_right-nice_nano_v2-zmk.uf2` for the right half
+   - the `.uf2` from the `vireal_dactyl_left` artifact for the left half
+   - the `.uf2` from the `vireal_dactyl_right` artifact for the right half
 3. The controller will automatically reset and disconnect
 4. Repeat for the other half
+
+If the halves stop seeing each other after a rebuild, first flash the `.uf2` from the
+`vireal_dactyl_settings_reset` artifact to both halves, then flash the normal left and
+right firmware again.
 
 ## Hardware Assembly
 
@@ -146,6 +150,7 @@ With the 18650 battery, you can expect approximately:
 2. **Halves not connecting**
    - Reset both halves
    - Ensure both halves have the correct firmware
+   - Flash the `vireal_dactyl_settings_reset` build to both halves, then re-flash the normal firmware
 
 3. **Unable to enter bootloader mode**
    - Connect via USB
